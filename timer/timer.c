@@ -3,12 +3,10 @@
 #include "common.h"
 #include "idt.h"
 
-static uint64_t tick = 0;
-
 void timer_callback(pt_regs *regs)
 {
-	tick++;
-	
+	static uint32_t tick = 0;
+//	tick++;
 }
 
 void init_timer(uint32_t frequency)
