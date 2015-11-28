@@ -1,0 +1,5 @@
+file crystal
+target remote :1234
+break kern_entry
+break timer_callback
+c
